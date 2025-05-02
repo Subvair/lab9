@@ -9,8 +9,9 @@ namespace DirectorySyncMVP
     public List<SyncLogEntry> Load(string path)
     {
       if (!File.Exists(path))
+      {
         return new List<SyncLogEntry>();
-
+      }
       var json = File.ReadAllText(path);
       return JsonSerializer.Deserialize<List<SyncLogEntry>>(json);
     }
