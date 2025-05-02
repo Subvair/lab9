@@ -12,6 +12,7 @@ namespace DirectorySyncMVP
       {
         return new List<SyncLogEntry>();
       }
+      
       var serializer = new XmlSerializer(typeof(List<SyncLogEntry>));
       using var stream = File.OpenRead(path);
       return (List<SyncLogEntry>)serializer.Deserialize(stream);

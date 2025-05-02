@@ -9,17 +9,17 @@ namespace DirectorySyncMVP
 
     public SyncPresenter(IView view)
     {
-        _view = view;
+      _view = view;
 
-        ILogService logService = _view.UseXmlLog
-            ? new XmlLogService()
-            : new JsonLogService();
+      ILogService logService = _view.UseXmlLog
+        ? new XmlLogService()
+        : new JsonLogService();
 
-        _model = new SyncModel(logService);
-        _view.SyncRequested += OnSyncRequested;
+      _model = new SyncModel(logService);
+      _view.SyncRequested += OnSyncRequested;
     }
 
-        private void OnSyncRequested()
+    private void OnSyncRequested()
     {
       var entries = new List<SyncLogEntry>();
       var result = _model.SyncDirectories(_view.Directory1Path, _view.Directory2Path, _view.UseXmlLog, out entries);
