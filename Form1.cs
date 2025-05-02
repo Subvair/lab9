@@ -29,13 +29,17 @@ namespace DirectorySyncMVP
     private void buttonBrowse1_Click(object sender, EventArgs e)
     {
       if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+      {      
         textBoxDir1.Text = folderBrowserDialog.SelectedPath;
+      }
     }
 
     private void buttonBrowse2_Click(object sender, EventArgs e)
     {
       if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+      {
         textBoxDir2.Text = folderBrowserDialog.SelectedPath;
+      }
     }
   }
 }

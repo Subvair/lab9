@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vadim\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Users\\vadim\\OneDrive\\Рабочий стол\\Новая папка (2)\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "C:\\Users\\vadim\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectPath": "C:\\Users\\vadim\\OneDrive\\Рабочий стол\\Новая папка (2)\\WinFormsApp2.csproj",
       "packagesPath": "C:\\Users\\vadim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vadim\\source\\repos\\WinFormsApp2\\WinFormsApp2\\obj\\",
+      "outputPath": "C:\\Users\\vadim\\OneDrive\\Рабочий стол\\Новая папка (2)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

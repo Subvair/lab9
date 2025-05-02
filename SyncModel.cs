@@ -55,6 +55,7 @@ namespace DirectorySyncMVP
                     output.Add($"Файл \"{file}\" создан");
                     log.Add(new SyncLogEntry { Path = file, Action = "Created", Timestamp = timestamp });
                 }
+                
                 else if (timestamp > File.GetLastWriteTime(tgtFile))
                 {
                     File.Copy(srcFile, tgtFile, true);

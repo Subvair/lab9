@@ -9,8 +9,9 @@ namespace DirectorySyncMVP
     public List<SyncLogEntry> Load(string path)
     {
       if (!File.Exists(path))
+      {
         return new List<SyncLogEntry>();
-
+      }
       var serializer = new XmlSerializer(typeof(List<SyncLogEntry>));
       using var stream = File.OpenRead(path);
       return (List<SyncLogEntry>)serializer.Deserialize(stream);
